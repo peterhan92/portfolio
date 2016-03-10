@@ -13,22 +13,96 @@
  *= require_tree .
  *= require_self
  */
-body {	
-	background-image: url(/assets/background.jpg);
+.nav-bar {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
 }
-ul
-{
-    list-style-type: none;
+.bar {
+  background-color: white;
+  color: black;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
 }
-.top {
-	padding-top:100px;
+.bar:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
 }
-.center {
-    background-color: rgba(255,255,255,.6);
-    text-align: center;
-    padding: 20px;
-    padding-top: 5px;
 
+#page-1 {
+  height: 780px;
+  background-image: url("https://d3q49wayiwmron.cloudfront.net/wp-content/uploads/Simple-productivity-tips1.jpg");
+  background-repeat: no-repeat;
+}
+.home-content {
+  margin-top: 110px;
+  margin-left: 903px;
+  width: 265px;
+  text-shadow: 2px 2px white;
+}
+
+#page-2 {
+  height: 780px;
+  background-image: url("http://workhardanywhere.com/wp-content/uploads/2014/10/WHA_code_needle.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+.about {
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 900px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#page-3 {
+  height: 780px;
+  background-image: url("http://www.hdwallpaperscool.com/wp-content/uploads/2015/03/colorful-hot-air-balloon-high-definition-wallpaper-for-desktop-background-download-air-balloon-images-free.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.projects {
+  color: black;
+  text-shadow: 2px 2px white;
+  padding-top: 20px;
+  margin-left: 75px;
+  margin-right: 950px;
+}
+#p1, #p2, #p3{
+  color: black;
+  background-color: rgba(255, 255, 255, .4);
+  height: 200px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10%;
+  margin: 5px;
+}
+#p1:hover, #p2:hover, #p3:hover {
+  background-color: rgba(0, 0, 0, .6);
+}
+#p1-img, #p2-img, #p3-img {
+  height: 100px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 40%;
+}
+
+#page-4 {
+  height: 780px;
+  background-image: url("http://cdn.paper4pc.com/images/venice-wallpaper-7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
