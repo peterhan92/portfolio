@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Peter's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -9,40 +10,39 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
+			<div class="nav-bar navbar-default text-center">
+			  <div class="container-fluid">
+			    <div class="row">
+			      <div class="empty-space col-xs-1"></div>
+			      <a href="https://www.linkedin.com/in/peter-han-a76a13b7" target="_blank">
+			        <div class="bar col-xs-1">
+			          <h4>Peter Han</h4>
+			        </div>
+			      </a>
+			      <div class="empty-space col-xs-7">
+			      </div>
+			      <a href="#home">
+			        <div class="bar col-xs-1">
+			          <h4>Home</h4>
+			        </div>
+			      </a>
+			      <a href="#about">
+			        <div class="bar col-xs-1">
+			          <h4>About</h4>
+			        </div>
+			      </a>
+			      <a href="#projects">
+			        <div class="bar col-xs-1">
+			          <h4>Projects</h4>
+			        </div>
+			      </a>
+			    </div>
+			  </div>
+			</div>
 
-	<div class="nav-bar navbar-header text-center">
-	  <div class="container-fluid">
-	    <div class="row">
-	      <div class="empty-space col-xs-1"></div>
-	      <a href="https://www.linkedin.com/in/peter-han-a76a13b7" target="_blank">
-	        <div class="bar col-xs-1">
-	          <h4>Peter Han</h4>
-	        </div>
-	      </a>
-	      <div class="empty-space col-xs-7">
-	      </div>
-	      <a href="#home">
-	        <div class="bar col-xs-1">
-	          <h4>Home</h4>
-	        </div>
-	      </a>
-	      <a href="#about">
-	        <div class="bar col-xs-1">
-	          <h4>About</h4>
-	        </div>
-	      </a>
-	      <a href="#projects">
-	        <div class="bar col-xs-1">
-	          <h4>Projects</h4>
-	        </div>
-	      </a>
-	    </div>
-	  </div>
-	</div>
+			<%= yield %>
 
+			<center>© 2016 Peter Han</center>
 
-	<%= yield %>
-
-	<center>© 2016 Peter Han</center>
 </body>
 </html>
